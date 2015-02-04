@@ -94,6 +94,10 @@ function Awake ()
 {
 	moveDirection = transform.TransformDirection(Vector3.forward);
 	
+	_animation = GetComponent(Animation);
+	if(!_animation)
+		Debug.Log("The character you would like to control doesn't have animations. Moving her might look weird.");
+	
 	/*
 public var idleAnimation : AnimationClip;
 public var walkAnimation : AnimationClip;
