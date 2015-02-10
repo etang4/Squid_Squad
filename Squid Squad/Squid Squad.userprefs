@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CollideAndParticles.js">
@@ -9,4 +10,18 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+=======
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CamMovement.cs">
+    <Files>
+      <File FileName="Assets\Scripts\ItemsListPanel.cs" Line="17" Column="32" />
+      <File FileName="Assets\Scripts\CamMovement.cs" Line="35" Column="12" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+>>>>>>> Stashed changes
 </Properties>
