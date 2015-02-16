@@ -1,6 +1,8 @@
 ﻿#pragma strict
 
 var customSkin: GUISkin;
+var playButton: Texture2D;
+var creditsButton: Texture2D;
 
 function OnGUI () 
 {
@@ -12,12 +14,16 @@ function OnGUI ()
 	//halfScreenW-halfButtonW, 160, 100, 50
 	var myRect = new Rect(halfScreenW-halfButtonW - 60, 300, buttonW, buttonH);
 	
-	var isButtonCreated : boolean = GUI.Button(myRect, "Play Game");
+	var isButtonCreated : boolean = GUI.Button(myRect, playButton); 
 	
-	var isButtonCreated2 : boolean = GUI.Button(new Rect(halfScreenW-halfButtonW -60, 380, buttonW, buttonH), "Credits");
+	var isButtonCreated2 : boolean = GUI.Button(new Rect(halfScreenW-halfButtonW -60, 380, buttonW, buttonH), creditsButton);
+	
+	//var isButtonCreated : boolean = GUI.Button(myRect, "Play Game"); 
+	
+	//var isButtonCreated2 : boolean = GUI.Button(new Rect(halfScreenW-halfButtonW -60, 380, buttonW, buttonH), "Credits");
 	
 	GUI.color = Color.white;
-	
+
 	if (isButtonCreated) 
 	{
 		GUI.skin = customSkin;
