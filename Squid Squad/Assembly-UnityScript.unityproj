@@ -48,10 +48,14 @@
   <ItemGroup>
      <Compile Include="Assets\CollideAndParticles.js" />
      <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\Accelerator.js" />
+     <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\BlueCart.js" />
      <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\Booster.js" />
      <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\Driving.js" />
      <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\FollowObject.js" />
      <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\Oil_Slide.js" />
+     <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\RedCart.js" />
+     <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\SpeedometerTest.js" />
+     <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\YellowCart.js" />
      <Compile Include="Assets\Scripts\Credits.js" />
      <Compile Include="Assets\Scripts\TitleMenu.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
