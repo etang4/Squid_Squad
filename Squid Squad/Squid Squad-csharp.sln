@@ -5,6 +5,8 @@ Project("{78B0D0BB-630F-A65D-9D44-3E2BAE5781C9}") = "Squid Squad", "Assembly-CSh
 EndProject
 Project("{78B0D0BB-630F-A65D-9D44-3E2BAE5781C9}") = "Squid Squad", "Assembly-CSharp-vs.csproj", "{EA4152A5-62C5-3F23-0DB8-9E40C99E58D7}"
 EndProject
+Project("{78B0D0BB-630F-A65D-9D44-3E2BAE5781C9}") = "Squid Squad", "Assembly-CSharp-Editor-vs.csproj", "{5C3651F7-E39A-37FF-0582-7FF8374B3C8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{EA4152A5-62C5-3F23-0DB8-9E40C99E58D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA4152A5-62C5-3F23-0DB8-9E40C99E58D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA4152A5-62C5-3F23-0DB8-9E40C99E58D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C3651F7-E39A-37FF-0582-7FF8374B3C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C3651F7-E39A-37FF-0582-7FF8374B3C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C3651F7-E39A-37FF-0582-7FF8374B3C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C3651F7-E39A-37FF-0582-7FF8374B3C8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																									GlobalSection(MonoDevelopProperties) = preSolution
+																																													GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
