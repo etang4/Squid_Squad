@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: BlueRock1_Mat
+  m_Name: Kart_Red_Mat
   m_Shader: {fileID: 4800000, guid: 33acfa205549ee24d9cd708216828391, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
