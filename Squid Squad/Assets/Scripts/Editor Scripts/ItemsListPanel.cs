@@ -4,13 +4,15 @@ using System.Collections;
 public class ItemsListPanel : MonoBehaviour {
 
 	public GameObject originalButton;
-	public GameObject[] items;
+	public GameObject[] itemsList;
 	public int listSize;
+	public GameObject[] items;
 
 	// Use this for initialization
 	void Start () {
+		
 		for(int i = 0; i < listSize - 1; i++){
-			GameObject newButton = Instantiate(originalButton) as GameObject;
+			GameObject newButton = Instantiate(itemsList[i]) as GameObject;
 			newButton.transform.parent = this.transform;
 			//set new panels to correct size
 			Debug.Log (Screen.height);// / 15.04f
@@ -23,5 +25,9 @@ public class ItemsListPanel : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public void itemZero(){
+		GameObject item0 = (GameObject) Instantiate(items[0]);
 	}
 }
