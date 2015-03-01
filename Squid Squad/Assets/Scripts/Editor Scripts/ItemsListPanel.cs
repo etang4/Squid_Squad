@@ -6,7 +6,7 @@ public class ItemsListPanel : MonoBehaviour {
 	public GameObject originalButton;
 	public GameObject[] itemsList;
 	public int listSize;
-	public GameObject[] items;
+	//public GameObject[] items;
 
 	// Use this for initialization
 	void Start () {
@@ -15,8 +15,7 @@ public class ItemsListPanel : MonoBehaviour {
 			GameObject newButton = Instantiate(itemsList[i]) as GameObject;
 			newButton.transform.parent = this.transform;
 			//set new panels to correct size
-			Debug.Log (Screen.height);// / 15.04f
-			Debug.Log(Screen.width);// / 8.33f
+			
 			//Resize image/button with screen height and screen width.
 			//newButton.transform.localScale = new Vector3(originalButton.transform.localScale.x,originalButton.transform.localScale.y,1);
 		}
@@ -27,7 +26,7 @@ public class ItemsListPanel : MonoBehaviour {
 	
 	}
 
-	public void itemZero(){
+	/*public void itemZero(){
 		GameObject item0 = (GameObject) Instantiate(items[0]);
-	}
+	}*/
 }

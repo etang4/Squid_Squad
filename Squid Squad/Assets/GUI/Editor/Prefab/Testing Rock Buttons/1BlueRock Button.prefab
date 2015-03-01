@@ -100,8 +100,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11474634, guid: 3bcb52b674ee616428792ea4d5d18443, type: 2}
-        m_MethodName: itemZero
+      - m_Target: {fileID: 11498550, guid: a4bfb6b6a92f64442840bc549d3ecea4, type: 2}
+        m_MethodName: item0Zero
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
