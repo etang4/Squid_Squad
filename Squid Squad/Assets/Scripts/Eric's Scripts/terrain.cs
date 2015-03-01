@@ -8,10 +8,7 @@ public class terrain : MonoBehaviour {
 	int xResolution;
 	int zResolution;
 	float [,] heights;
-	public bool canTerrain = false;
 
-
-	
 
 	// Use this for initialization
 	void Start () {
@@ -19,36 +16,23 @@ public class terrain : MonoBehaviour {
 		xResolution = tData.heightmapWidth;
 		zResolution = tData.heightmapHeight;
 		heights = tData.GetHeights(0,0,xResolution, zResolution);
-		canTerrain = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(canTerrain){
-			Debug.Log("debug");
-			if(Input.GetMouseButton(0)){
-				RaycastHit hit;
-				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-				if(Physics.Raycast(ray, out hit)){
-					raiseTerrain(hit.point);
-				}
-			}
-			if(Input.GetMouseButton(1)){
-				RaycastHit hit;
-				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-				if(Physics.Raycast(ray, out hit)){
-					lowerTerrain(hit.point);
-				}
+		if(Input.GetMouseButton(0)){
+			RaycastHit hit;
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			if(Physics.Raycast(ray, out hit)){
+				raiseTerrain(hit.point);
 			}
 		}
-	}
-
-	public void ToggleTerrainMod(){
-		if(canTerrain == false){
-			canTerrain = true;
-		}
-		else{
-			canTerrain  = false;
+		if(Input.GetMouseButton(1)){
+			RaycastHit hit;
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			if(Physics.Raycast(ray, out hit)){
+				lowerTerrain(hit.point);
+			}
 		}
 	}
 
