@@ -11,7 +11,7 @@ GameObject:
   - 95: {fileID: 9515196}
   m_Layer: 0
   m_Name: Kart_Red
-  m_TagString: Untagged
+  m_TagString: Kart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -588,7 +588,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115174}
-  m_LocalRotation: {x: -.42525205, y: -.42525205, z: -.564943075, w: .564943075}
+  m_LocalRotation: {x: -.42525208, y: -.42525208, z: -.564943135, w: .564943135}
   m_LocalPosition: {x: -.0178404227, y: .0108495103, z: -.0576632135}
   m_LocalScale: {x: 1, y: 1.33426964, z: 1}
   m_Children: []

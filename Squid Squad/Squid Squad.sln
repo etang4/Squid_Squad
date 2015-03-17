@@ -11,8 +11,6 @@ Project("{78B0D0BB-630F-A65D-9D44-3E2BAE5781C9}") = "Squid Squad", "Assembly-Uni
 EndProject
 Project("{78B0D0BB-630F-A65D-9D44-3E2BAE5781C9}") = "Squid Squad", "Assembly-UnityScript.unityproj", "{06373C4D-FE7C-2A78-8934-D56B5649C02D}"
 EndProject
-Project("{78B0D0BB-630F-A65D-9D44-3E2BAE5781C9}") = "Squid Squad", "Assembly-UnityScript-Editor.unityproj", "{2D46E56F-8265-4530-E0BA-2367C91F9DD4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,15 +37,11 @@ Global
 		{06373C4D-FE7C-2A78-8934-D56B5649C02D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06373C4D-FE7C-2A78-8934-D56B5649C02D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06373C4D-FE7C-2A78-8934-D56B5649C02D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2D46E56F-8265-4530-E0BA-2367C91F9DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D46E56F-8265-4530-E0BA-2367C91F9DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D46E56F-8265-4530-E0BA-2367C91F9DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D46E56F-8265-4530-E0BA-2367C91F9DD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																						GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																									GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																																																																																																		GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> Stashed changes
