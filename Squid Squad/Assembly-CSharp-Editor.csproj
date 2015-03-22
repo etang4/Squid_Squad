@@ -46,13 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Quantum Theory\Polyworld\Editor\QT_CombineMeshes.cs" />
-     <Compile Include="Assets\Quantum Theory\Polyworld\Editor\QT_ConvertMesh.cs" />
-     <Compile Include="Assets\Quantum Theory\Polyworld\Editor\QT_ExportTerrain.cs" />
-     <Compile Include="Assets\Quantum Theory\Polyworld\Editor\QT_ModelProcessor.cs" />
-     <Compile Include="Assets\Quantum Theory\Polyworld\Editor\QT_ModifyColorEditor.cs" />
-     <Compile Include="Assets\Quantum Theory\Polyworld\Editor\QT_SurfaceNoiseEditor.cs" />
-     <Compile Include="Assets\Quantum Theory\Polyworld\Editor\SetPivot.cs" />
+     <Compile Include="Assets\Editor\Object2Terrain.cs" />
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\Bush2.txt" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsIBLDiffuse.shader" />
      <None Include="Assets\Standard Assets\Mobile\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
