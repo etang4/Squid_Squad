@@ -40,7 +40,7 @@ public class QT_CombineMeshes : EditorWindow
     private bool isLightmapped = true;
     private bool castShadows = true, receiveShadows = true, addMeshCollider = true, isStatic = true, createParentGO = true;
     private string newName = "";
-    private int layer = 0;
+   // private int layer = 0;
     private List<GameObject> newObjects = new List<GameObject>(); //holds new objects.
     private static int objectCount = 0; //counter for the autonamed objects. Appended to the end of the name.
     private static string targetFolder;
@@ -71,11 +71,12 @@ public class QT_CombineMeshes : EditorWindow
             receiveShadows = EditorGUILayout.Toggle("Receive Shadows:", receiveShadows);
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.BeginHorizontal();
-            keepLayer = EditorGUILayout.Toggle("Keep Layer Choice:", keepLayer);
-            if (keepLayer)
-                layer = Selection.gameObjects[0].layer;
-            else
-                layer = 0;
+           // keepLayer = EditorGUILayout.Toggle("Keep Layer Choice:", keepLayer);
+			//layer = 0;
+          //  if (keepLayer)
+            //    layer = Selection.gameObjects[0].layer;
+            
+               
 
             addMeshCollider = EditorGUILayout.Toggle("Add Mesh Collider:", addMeshCollider);
             EditorGUILayout.EndHorizontal();

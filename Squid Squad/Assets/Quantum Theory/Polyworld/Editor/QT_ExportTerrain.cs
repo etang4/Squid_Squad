@@ -741,7 +741,7 @@ class QT_ExportTerrain : EditorWindow
             
             float tWidth = ttExtents.z * 2;      //extents are half the size of the terrain	
             float tLength = ttExtents.x * 2;
-            float tHeight = terrain.heightmapHeight;
+            float tHeight = terrain.heightmapHeight*2;
         
            
             float newBoundSize = (float)(faceSize * chunkVal[chunkValUI - 1]);
