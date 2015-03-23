@@ -1,45 +1,56 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &183366
+--- !u!1 &167984
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 483366}
-  - 114: {fileID: 11483366}
+  - 4: {fileID: 467984}
+  - 132: {fileID: 13267984}
   m_Layer: 0
-  m_Name: Selection
-  m_TagString: Untagged
+  m_Name: redSigns
+  m_TagString: GUITEXT1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &483366
+--- !u!4 &467984
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183366}
+  m_GameObject: {fileID: 167984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 543.796509, y: 4.40802288, z: 888.957764}
+  m_LocalPosition: {x: 477, y: 1, z: 854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11483366
-MonoBehaviour:
+--- !u!132 &13267984
+GUIText:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183366}
+  m_GameObject: {fileID: 167984}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2b7c6b379d212e4dae12dd5e567b764, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedObjectName: 
+  serializedVersion: 3
+  m_Text: Hi
+  m_Anchor: 2
+  m_Alignment: 2
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 66
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190335
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -49,6 +60,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 183366}
+  m_RootGameObject: {fileID: 167984}
   m_IsPrefabParent: 1
   m_IsExploded: 1
