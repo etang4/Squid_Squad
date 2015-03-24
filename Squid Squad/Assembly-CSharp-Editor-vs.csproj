@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_6_2;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_3;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -47,19 +47,35 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\Object2Terrain.cs" />
+     <Compile Include="Assets\LeapMotion\Editor\HandControllerEditor.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRBuild.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRGameView.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRPrefabs.cs" />
+     <Compile Include="Assets\OVR\Editor\OVRShimLoader.cs" />
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\Bush2.txt" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsIBLDiffuse.shader" />
      <None Include="Assets\Standard Assets\Mobile\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\LeapMotion\Resources\LeapIRUndistorted.shader" />
+     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\LeapMotion\Resources\LeapIRDistorted.shader" />
      <None Include="Assets\Standard Assets\Mobile\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\Architecture\Palette_NemesisRoof.txt" />
      <None Include="Assets\Standard Assets\Mobile\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\LeapMotion\Resources\LeapRGBDistorted.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsIBLDiffuseLinear.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\VertexLitVertexColors.shader" />
      <None Include="Assets\Standard Assets\Mobile\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\LeapMotion\InteractionUtils (alpha)\readme.txt" />
+     <None Include="Assets\LeapMotion\Resources\LeapIRUndistorted_foreground.shader" />
+     <None Include="Assets\LeapMotion\DemoResources\ScrollerText.txt" />
+     <None Include="Assets\LeapMotion\readme.txt" />
+     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\BladesOfGrass1.txt" />
+     <None Include="Assets\LeapMotion\Shaders\RimShading.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsIBLReflectiveLinear.shader" />
+     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\Architecture\Palette_Nemesis.txt" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexLitIBL.cginc" />
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\Architecture\Palette_SkyTempleRoof.txt" />
@@ -67,6 +83,8 @@
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\Mushroom Palettes.txt" />
      <None Include="Assets\Standard Assets\Mobile\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\Architecture\Palette_LighterWood.txt" />
+     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\Architecture\Palette_LighterWoodRoof.txt" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsIBLEmissive.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\Architecture\Palette_DefaultBrown.txt" />
@@ -76,23 +94,28 @@
      <None Include="Assets\Standard Assets\Mobile\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
      <None Include="Assets\Standard Assets\Mobile\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets\Mobile\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
+     <None Include="Assets\LeapMotion\Resources\LeapRGBUndistorted.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\Architecture\Palette_DefaultBrownRoof.txt" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\QT_Cubemaps.cginc" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsIBLEmissiveLinear.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/test/Pictures/SquidSquad/Squid Squad/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/KevinCueto/Documents/GitHub/Squid_Squad/Squid Squad/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/test/Pictures/SquidSquad/Squid Squad/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/KevinCueto/Documents/GitHub/Squid_Squad/Squid Squad/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/Editor/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="LeapCSharp.NET3.5">
+ <HintPath>C:/Users/KevinCueto/Documents/GitHub/Squid_Squad/Squid Squad/Assets/Plugins/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
