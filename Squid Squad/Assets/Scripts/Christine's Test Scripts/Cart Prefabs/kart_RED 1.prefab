@@ -1180,7 +1180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df19b0f03ff942418438d48a233be32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racePath: {fileID: 11466586, guid: 303b13ed4500831459d864602faebcf9, type: 2}
+  racePath: {fileID: 11463786, guid: 3a6b9819022f6b9468a2d9449fef9521, type: 2}
   targetNode: {fileID: 466598, guid: 303b13ed4500831459d864602faebcf9, type: 2}
   nextTargetNode: {fileID: 401308, guid: c4975df4d3fae8146a422de0fd7e013e, type: 2}
   currentNode: {fileID: 0}
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4f612f2ce82a948a6863bcb6aeda80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racePath: {fileID: 11466586, guid: 303b13ed4500831459d864602faebcf9, type: 2}
+  racePath: {fileID: 11463786, guid: 3a6b9819022f6b9468a2d9449fef9521, type: 2}
   objectToMoveTowards: {fileID: 401308, guid: c4975df4d3fae8146a422de0fd7e013e, type: 2}
   turnSpeed: 1
   rAcceleration: 13

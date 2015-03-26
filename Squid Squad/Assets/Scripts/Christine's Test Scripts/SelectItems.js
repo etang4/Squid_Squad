@@ -3,7 +3,7 @@
 var selectedObjectName: String;
 
 function Start () {
-
+	selectedObjectName = "RaceTrackNode";
 }
 
 function Update () {
@@ -33,3 +33,10 @@ function ClickedNodeItem()
 	
 	PlayerPrefs.SetString("CartCharacter", selectedObjectName);
 }
+function ClickedRaceTrackItem()
+{
+	selectedObjectName = "RaceTrackNode";
+	
+	PlayerPrefs.SetString("CartCharacter", selectedObjectName);
+}
+
