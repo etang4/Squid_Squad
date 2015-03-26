@@ -2,7 +2,8 @@
  
 import UnityEngine;
 
-private var prefab: Transform; 
+//var selectedObject : SelectItems;
+var prefab: Transform; 
 private var placedItem: Transform; 
 private var hit : RaycastHit; //gets the target of where the ray hits
 
@@ -10,21 +11,19 @@ var gos: GameObject[];
 
 function Start()
 {
-	
-	
 }
 function Update ()
 {	
-	gos = GameObject.FindGameObjectsWithTag(PlayerPrefs.GetString("CartCharacter"));
+	/*gos = GameObject.FindGameObjectsWithTag(PlayerPrefs.GetString("CartCharacter");
 	Selection.objects = gos;
 	
-	prefab = Selection.activeTransform;
+	prefab = Selection.activeTransform;*/
 	
 	//if user left-clicks, then 
 	if(Input.GetButtonDown("Fire1"))
 	{
 		//use camera's ray to get mouse position
-		var ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+		var ray : Ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		
 		//works on terrain level
 		var layerMask = 1 << 8; //use the 8th layer which is the terrain
