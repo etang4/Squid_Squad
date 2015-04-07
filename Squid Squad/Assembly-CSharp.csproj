@@ -137,6 +137,7 @@
      <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\Path.cs" />
      <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\RaceTrack.cs" />
      <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\RunnerHands.cs" />
+     <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\RunningHands.cs" />
      <Compile Include="Assets\Scripts\Christine&apos;s Test Scripts\ToggleOnOff.cs" />
      <Compile Include="Assets\Scripts\ClickMoveObject.cs" />
      <Compile Include="Assets\Scripts\Editor Scripts\AttributeListPanel.cs" />
