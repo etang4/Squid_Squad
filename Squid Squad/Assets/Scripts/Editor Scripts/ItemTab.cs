@@ -28,10 +28,4 @@ public class ItemTab : MonoBehaviour {
 		gameplayTab.SetActive(true);
 		chooseFPTab.SetActive(false);
 	}
-	
-	public void ClickedChooseFPTab(){
-		itemTab.SetActive(false);
-		gameplayTab.SetActive(false);
-		chooseFPTab.SetActive(true);
-	}
 }
