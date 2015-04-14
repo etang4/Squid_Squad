@@ -3,7 +3,7 @@ using System.Collections;
 
 public class playRunnerButton : MonoBehaviour {
 
-	public GameObject EditorUI;
+	/*public GameObject EditorUI;
 	public Camera mainCam;
 	public GameObject player;
 
@@ -22,5 +22,5 @@ public class playRunnerButton : MonoBehaviour {
 		mainCam.setActive(false);
 		player.setActive(true);
 	}
-
+*/
 }
