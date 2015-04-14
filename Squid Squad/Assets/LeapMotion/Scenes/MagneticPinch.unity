@@ -1722,7 +1722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceSpringConstant: 100
-  magnetDistance: 5
+  magnetDistance: 2
 --- !u!1 &1332477904
 GameObject:
   m_ObjectHideFlags: 0

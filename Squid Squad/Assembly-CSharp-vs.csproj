@@ -47,6 +47,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GUI\Racing\RacingGUI.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\DemoResources\Scripts\BlocksPlaneGenerator.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\DemoResources\Scripts\MovementManager.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\DemoResources\Scripts\RandomBlocksGenerator.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\Scripts\PassthroughEnabler.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\SystemWipe\QuickSwitcher.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\SystemWipe\SystemWipeRecognizerListener.cs" />
+     <Compile Include="Assets\LeapMotion+OVR\SystemWipe\SystemWipeRecognizerNative.cs" />
      <Compile Include="Assets\LeapMotion\DemoResources\Scripts\AerodynamicLeaf.cs" />
      <Compile Include="Assets\LeapMotion\DemoResources\Scripts\ChangeMaterialOnGrab.cs" />
      <Compile Include="Assets\LeapMotion\DemoResources\Scripts\CubeWave.cs" />
@@ -112,6 +119,7 @@
      <Compile Include="Assets\OVR\Scripts\OVRManager.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRPluginEvent.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRTracker.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRUnityVersionChecker.cs" />
      <Compile Include="Assets\OVR\Scripts\OvrCapi.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRCrosshair.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRGUI.cs" />
@@ -160,6 +168,7 @@
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsIBLDiffuse.shader" />
      <None Include="Assets\Standard Assets\Mobile\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\LeapMotion\Resources\LeapIRUndistorted.shader" />
+     <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\LeapMotion\Resources\LeapIRDistorted.shader" />
      <None Include="Assets\Standard Assets\Mobile\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
@@ -169,6 +178,7 @@
      <None Include="Assets\LeapMotion\Resources\LeapRGBDistorted.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsIBLDiffuseLinear.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\VertexLitVertexColors.shader" />
+     <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
      <None Include="Assets\Standard Assets\Mobile\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\LeapMotion\InteractionUtils (alpha)\readme.txt" />
@@ -181,6 +191,7 @@
      <None Include="Assets\LeapMotion\Shaders\RimShading.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexColorsIBLReflectiveLinear.shader" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\OVR\Shaders\Unlit Transparent HUD.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\Architecture\Palette_Nemesis.txt" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\VertexLitIBL.cginc" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
@@ -201,6 +212,7 @@
      <None Include="Assets\Standard Assets\Mobile\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets\Mobile\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
      <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
+     <None Include="Assets\Plugins\x86\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Resources\LeapRGBUndistorted.shader" />
      <None Include="Assets\Quantum Theory\Polyworld\Ancient East\Color Palettes\Architecture\Palette_DefaultBrownRoof.txt" />
      <None Include="Assets\Quantum Theory\Polyworld\Shaders\VertexColors\IBL\QT_Cubemaps.cginc" />
