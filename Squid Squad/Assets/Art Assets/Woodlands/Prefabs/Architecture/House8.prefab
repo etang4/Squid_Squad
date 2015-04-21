@@ -11,7 +11,7 @@ GameObject:
   m_Layer: 0
   m_Name: House8
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -174,7 +174,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_LocalRotation: {x: -.5, y: .49999994, z: .499999851, w: .500000119}
+  m_LocalRotation: {x: -.50000006, y: .5, z: .499999911, w: .500000179}
   m_LocalPosition: {x: 3.32913208, y: .249372482, z: .845428467}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -198,7 +198,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
-  m_LocalRotation: {x: -.5, y: .49999994, z: .499999851, w: .500000119}
+  m_LocalRotation: {x: -.50000006, y: .5, z: .499999911, w: .500000179}
   m_LocalPosition: {x: 1.64077759, y: 0, z: .845001221}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -210,7 +210,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100010}
-  m_LocalRotation: {x: -.5, y: .49999994, z: .499999851, w: .500000119}
+  m_LocalRotation: {x: -.50000006, y: .5, z: .499999911, w: .500000179}
   m_LocalPosition: {x: 0, y: 0, z: -2.61907959}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -234,7 +234,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100014}
-  m_LocalRotation: {x: -.5, y: .49999994, z: .499999851, w: .500000119}
+  m_LocalRotation: {x: -.50000006, y: .5, z: .499999911, w: .500000179}
   m_LocalPosition: {x: 3.5, y: 4.11211395, z: -1.45622253}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
