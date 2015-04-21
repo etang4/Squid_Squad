@@ -16,12 +16,15 @@ ModelImporter:
     2300000: AETerrain-BaseMesh_MeshPart0
     2300002: AETerrain-BaseMesh_MeshPart1
     2300004: AETerrain-BaseMesh_MeshPart2
+    2300006: AETerrain-BaseMesh
     3300000: AETerrain-BaseMesh_MeshPart0
     3300002: AETerrain-BaseMesh_MeshPart1
     3300004: AETerrain-BaseMesh_MeshPart2
+    3300006: AETerrain-BaseMesh
     4300000: AETerrain-BaseMesh_MeshPart0
     4300002: AETerrain-BaseMesh_MeshPart1
     4300004: AETerrain-BaseMesh_MeshPart2
+    4300006: AETerrain-BaseMesh
   materials:
     importMaterials: 1
     materialName: 0
