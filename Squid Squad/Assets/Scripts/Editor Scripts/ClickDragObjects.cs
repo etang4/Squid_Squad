@@ -20,6 +20,15 @@ public class ClickDragObjects : MonoBehaviour {
 
  	//object auto follows the cursor
 	void Update(){
+		//Delete Object
+		if(Input.GetMouseButtonDown(1)){
+			screenPoint = Camera.main.camera.ScreenPointToRay(Input.mousePosition);
+			if(Physics.Raycast(screenPoint, out hit, Mathf.Infinity)){
+				if(hit.collider.gameObject == character){
+					Destroy(gameObject);
+				}
+			}
+ 		}
 		//if object is just created, the object will follow the cursor until it is placed.
 		if(justCreated){
 	 		screenPoint = Camera.main.camera.ScreenPointToRay(Input.mousePosition);

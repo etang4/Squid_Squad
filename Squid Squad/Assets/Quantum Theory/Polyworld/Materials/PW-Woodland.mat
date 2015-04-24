@@ -48,6 +48,10 @@ Material:
         second: .5
       data:
         first:
+          name: _Emission
+        second: 1
+      data:
+        first:
           name: _IBLBrightness
         second: 1.18918908
       data:
@@ -57,10 +61,6 @@ Material:
       data:
         first:
           name: _ReflectionAmount
-        second: 1
-      data:
-        first:
-          name: _Emission
         second: 1
       data:
         first:
