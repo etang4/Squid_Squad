@@ -47,11 +47,11 @@ public class RunningHands : MonoBehaviour {
 		
 		//checks for relative direction
 		//if incremented the forward position, would it be greater or lesser than current?
-		if(transform.position.x + 6 > transform.position.x)
+		if(Vector3.Dot(transform.right, Vector3.right) > 0.0f)
 		{
 			posDirection = true;
 		}
-		else
+		else if(Vector3.Dot(transform.right, Vector3.right) < 0.0f)
 			negDirection = true;
 		
 		//if hand is recognized as right
@@ -61,12 +61,14 @@ public class RunningHands : MonoBehaviour {
 			if (posDirection)
 			{
 				//moves the object
-				transform.position += -Vector3.right * 2;
+				//transform.position += -Vector3.right * 0.1f;
+				direction = Vector3.right;
 			}
 			else if (negDirection)
 			{
 				//moves the object
-				transform.position += Vector3.right * 2;
+				//transform.position += Vector3.right * 0.1f;
+				direction = -Vector3.right;
 			}			
 		}
 		//if hand is recognized as left
@@ -75,11 +77,14 @@ public class RunningHands : MonoBehaviour {
 			//if the hand is facing in positive direction,
 			if (posDirection) {
 				//moves the object
-				transform.position += Vector3.right * 2;
+				//transform.position += Vector3.right * 0.1f;
+				direction = -Vector3.right;
 			} else if (negDirection) {
-				transform.position += -Vector3.right * 2;
+				//transform.position += -Vector3.right * 0.1f;
+				direction = Vector3.right;
 			}
 		}
+		transform.Translate (direction * 0.15f);
 	}
 	
 	//default character's forward movement; accelerate as time goes by
@@ -94,8 +99,9 @@ public class RunningHands : MonoBehaviour {
 		}
 		*/
 		Vector3 direction = Vector3.one;
-		
-		if (transform.position.z > 0) {
+
+		//if controller is facing positive direction,then move forwards in that direction
+		if (Vector3.Dot(transform.forward, Vector3.forward) > 0.0f) {
 			direction = -Vector3.forward;
 			
 			//if current force is less than maxSpeed, then increase it
@@ -105,8 +111,8 @@ public class RunningHands : MonoBehaviour {
 				rMoveForce = rMaxSpeed;
 		}
 		
-		//move backward
-		if (transform.position.z < -1.0f) {
+		//else, move backward
+		else if (Vector3.Dot(transform.forward, Vector3.forward) < 0) {
 			direction = Vector3.forward;
 			
 			//if current force is less than or equal to maxSpeed
@@ -120,8 +126,8 @@ public class RunningHands : MonoBehaviour {
 		//transform.position += transform.right * handX * s;
 		//moves the object
 		
-		transform.position += direction * 0.5f * s;
-		
+		//transform.position += direction * 0.5f * s;
+		transform.Translate (direction * 0.8f * s);
 	}
 	
 	//jumping behavior for the first person controller; 
@@ -133,7 +139,9 @@ public class RunningHands : MonoBehaviour {
 		
 		if (allHands.Count >= 2) {
 
-			transform.position += Vector3.up * 0.5f;
+			//transform.position += Vector3.up * 0.15f;
+			transform.Translate(Vector3.up * 1.5f);
+
 			/*//if current force is less than or equal to maxSpeed
 			if(rMoveForce <= 10) 
 				rMoveForce = 10;
@@ -144,6 +152,8 @@ public class RunningHands : MonoBehaviour {
 
 			rigidbody.AddForce(Vector3.up * s);*/
 		}
+
+
 	}
 	// gets the hand of the user
 	Hand GetHand() {
@@ -166,23 +176,24 @@ public class RunningHands : MonoBehaviour {
 		currentHand = runnerHand;
 		
 		HandList allHands = f.Hands;
-		
-		if (runnerHand != null) {
-			//currentHandPose = IsHandOpen(runnerHand);
-			MoveFPCharacter(runnerHand);
 
-			if(allHands.Count >= 2) 
-				Jumping (currentHand);
-			else
+		//currentHandPose = IsHandOpen(runnerHand);
+		MoveFPCharacter(runnerHand);
+		if(allHands.Count >= 2) 
+			Jumping (currentHand);
+		else
+		{
+			if(runnerHand.IsLeft || runnerHand.IsRight)
 				MoveSideWay(runnerHand);
 		}
+
 		lastHandPose = currentHandPose;
 	}
 	
-	void Update()
+	/*void Update()
 	{
 		MoveFPCharacter(currentHand);
-	}
+	}*/
 
 	void OnCollisionEnter(Collision collision) {
 

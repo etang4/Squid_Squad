@@ -73,7 +73,10 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
+<<<<<<< HEAD
+=======
     tileSizeHint: 0
+>>>>>>> upstream/master
   m_NavMesh: {fileID: 0}
 --- !u!1001 &3832178
 Prefab:
