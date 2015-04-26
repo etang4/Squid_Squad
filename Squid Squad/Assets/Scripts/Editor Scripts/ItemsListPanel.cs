@@ -30,4 +30,37 @@ public class ItemsListPanel : MonoBehaviour {
 	public void itemZero(){
 		GameObject item0 = (GameObject) Instantiate(items[0]);
 	}
+
+	public void itemOne(){
+		GameObject item1 = (GameObject) Instantiate(items[1]);
+	}
+
+	public void itemTwo(){
+		GameObject item2 = (GameObject) Instantiate(items[2]);
+	}
+
+	public void itemThree(){
+		GameObject item3 = (GameObject) Instantiate(items[3]);
+	}
+
+	public void itemFour(){
+		GameObject item4 = (GameObject) Instantiate(items[4]);
+	}
+
+	public void itemFive(){
+		GameObject item5 = (GameObject) Instantiate(items[5]);
+	}
+
+	public void itemSix(){
+		GameObject item6 = (GameObject) Instantiate(items[6]);
+	}
+
+	public void itemSeven(){
+		GameObject item7 = (GameObject) Instantiate(items[7]);
+	}
+
+	public void itemEight(){
+		GameObject item8 = (GameObject) Instantiate(items[8]);
+	}
+
 }

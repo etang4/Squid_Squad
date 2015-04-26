@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using Leap;
 
@@ -176,15 +176,22 @@ public class RunningHands : MonoBehaviour {
 		currentHand = runnerHand;
 		
 		HandList allHands = f.Hands;
-
+		
 		//currentHandPose = IsHandOpen(runnerHand);
 		MoveFPCharacter(runnerHand);
-		if(allHands.Count >= 2) 
-			Jumping (currentHand);
-		else
-		{
-			if(runnerHand.IsLeft || runnerHand.IsRight)
-				MoveSideWay(runnerHand);
+		float dist = Vector3.Distance(this.transform.position, GameObject.Find("Wall").transform.position);
+		Debug.Log(dist);
+		if(dist > 10f){
+			if(allHands.Count >= 2) 
+				Jumping (currentHand);
+			else
+			{	
+				if(currentHand != null){
+					if(runnerHand.IsLeft || runnerHand.IsRight){
+						MoveSideWay(runnerHand);
+					}
+				}
+			}
 		}
 
 		lastHandPose = currentHandPose;
@@ -195,19 +202,12 @@ public class RunningHands : MonoBehaviour {
 		MoveFPCharacter(currentHand);
 	}*/
 
-	void OnCollisionEnter(Collision collision) {
 
-		//if the player has collided into objects more than 3 times, then 
-		if (collision.contacts.Length >= 3) {
-			s = 0.0f; //make FP object stop moving
+	void OnCollisionEnter(Collision other) {
 
-			//get the stopping time for the gameobject
-			seconds = runningTimeScore.seconds;
-			minutes = runningTimeScore.minutes;
-
-			str.text = minutes + " " + seconds;
-			scoreBoardGUI.SetActive (true);
-
-				}
+		if(other.gameObject.tag == "Obstacle"){
+			Debug.Log("DEBUG");
+		}
 	}
+
 }

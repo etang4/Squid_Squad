@@ -47,9 +47,8 @@ public class ToggleOnOff : MonoBehaviour {
 
 	//when exit out of editor mode
 	public void OffTogglePushed(){
-		visibility = !visibility;
 
-		itemsPanel.SetActive(visibility);
+		itemsPanel.SetActive(false);
 		visibleButton.SetActive (true);
 		racingGUI.SetActive (true);
 
@@ -57,12 +56,13 @@ public class ToggleOnOff : MonoBehaviour {
 		birdEyeCamera.SetActive(false);
 		scoreBoardGUI.SetActive (false);
 
-		countdown1.SetActive (false);
-		countdown2.SetActive (false);
-		countdown3.SetActive (false);
+		//countdown1.SetActive (false);
+		//countdown2.SetActive (false);
+		//countdown3.SetActive (false);
 
-		//reset fpCharacter to the following position
-		fPcharacter.transform.position = originalPosition;
+		//fpCharacter to the following position
+		Debug.Log("Create character");
+		Instantiate(fPcharacter,this.gameObject.transform.position, Quaternion.Euler(0,180,0));
 	}
 	public void CountdownStart()
 	{
@@ -106,9 +106,8 @@ public class ToggleOnOff : MonoBehaviour {
 	}
 	//when enter editor's mode
 	public void OnTogglePushed(){
-		visibility = !visibility;
 		
-		itemsPanel.SetActive(visibility);
+		itemsPanel.SetActive(true);
 		visibleButton.SetActive (false);
 		racingGUI.SetActive (false);
 
@@ -116,7 +115,10 @@ public class ToggleOnOff : MonoBehaviour {
 		birdEyeCamera.SetActive(true);
 		scoreBoardGUI.SetActive (false);
 
-		//freeze player's position
+		Debug.Log("Destroy player");
+
+		Destroy(GameObject.FindWithTag("Player"));
+		//freeze player's positionI
 		//fPcharacter.rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
 	}
 	public void ScoreBoardOn(){

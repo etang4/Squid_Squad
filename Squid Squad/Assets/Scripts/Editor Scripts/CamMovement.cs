@@ -4,7 +4,7 @@ using System.Collections;
 public class CamMovement : MonoBehaviour {
 
 	public float CamSpeed = 20f;
-	public bool moveDown = false;
+	public bool Invert = false;
 	// Use this for initialization
 	void Start () {
 
@@ -16,19 +16,39 @@ public class CamMovement : MonoBehaviour {
 	}
 
 	public void MoveCameraDown(){
-		transform.Translate (0,0,-CamSpeed,Space.World);
+		if(!Invert){
+			transform.Translate (0,0,-CamSpeed,Space.World);
+		}
+		else{
+			transform.Translate (0,0,CamSpeed,Space.World);
+		}
 	}
 
 	public void MoveCameraUp(){
-		transform.Translate (0,0,CamSpeed,Space.World);
+		if(!Invert){
+			transform.Translate (0,0,CamSpeed,Space.World);
+		}
+		else{
+			transform.Translate (0,0,-CamSpeed,Space.World);
+		}
 	}
 
 	public void MoveCameraLeft(){
-		transform.Translate (-CamSpeed,0,0,Space.World);
+		if(!Invert){
+			transform.Translate (-CamSpeed,0,0,Space.World);
+		}
+		else{
+			transform.Translate (CamSpeed,0,0,Space.World);
+		}
 	}
 
 	public void MoveCameraRight(){
-		transform.Translate (CamSpeed,0,0,Space.World);
+		if(!Invert){
+			transform.Translate (CamSpeed,0,0,Space.World);
+		}
+		else{
+			transform.Translate (-CamSpeed,0,0,Space.World);
+		}
 	}
 
 	public void AdjustCamSpeed(float value){
