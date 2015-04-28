@@ -21,7 +21,7 @@ function Update () {
 	if(rdist < 5){
 		HorAxis = Mathf.Max(0, HorAxis);
 	}
-
+	Debug.Log(HorAxis);
 	var directionVector = new Vector3(HorAxis * 30, 0, 30);
 	
 	if (directionVector != Vector3.zero) {
@@ -47,7 +47,7 @@ function Update () {
 
 	var speed : float = gameObject.GetComponent.<CharacterController>().velocity.magnitude;
 	if (speed < 0.5 ){
-		GameObject.Find("SpawnPoint").GetComponent("ToggleOnOff").OnTogglePushed();
+		GameObject.Find("SpawnPoint").GetComponent("ToggleOnOffERIC").OnTogglePushed();
 		Destroy(gameObject);
 	}
 }

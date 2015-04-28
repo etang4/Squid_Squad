@@ -235,8 +235,8 @@ MonoBehaviour:
   canControl: 1
   useFixedUpdate: 1
   movement:
-    maxForwardSpeed: 30
-    maxSidewaysSpeed: 30
+    maxForwardSpeed: 400
+    maxSidewaysSpeed: 400
     maxBackwardsSpeed: 0
     slopeSpeedMultiplier:
       serializedVersion: 2
@@ -258,7 +258,7 @@ MonoBehaviour:
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-    maxGroundAcceleration: 60
+    maxGroundAcceleration: 60.3300018
     maxAirAcceleration: 15
     gravity: 20
     maxFallSpeed: 40
@@ -273,9 +273,9 @@ MonoBehaviour:
     movementTransfer: 2
   sliding:
     enabled: 0
-    slidingSpeed: 10
+    slidingSpeed: 135.009995
     sidewaysControl: 1
-    speedControl: .400000006
+    speedControl: 306.600006
 --- !u!1002 &11400003
 EditorExtensionImpl:
   serializedVersion: 6

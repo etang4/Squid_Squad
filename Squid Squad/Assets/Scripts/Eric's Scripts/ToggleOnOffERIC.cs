@@ -2,7 +2,7 @@
 using System.Collections;
 
 //a visbility switch for the GUI when play button is pressed.
-public class ToggleOnOff : MonoBehaviour {
+public class ToggleOnOffERIC : MonoBehaviour {
 
 	bool visibility = true;
 	public GameObject itemsPanel, visibleButton, racingGUI, scoreBoardGUI;
@@ -10,7 +10,7 @@ public class ToggleOnOff : MonoBehaviour {
 	public GameObject fpCamera, birdEyeCamera;
 
 	public GameObject fPcharacter;
-	Vector3 originalPosition;
+
 
 	public GameObject countdown1, countdown2, countdown3, startbutton;
 	float currentTimer;
@@ -32,8 +32,6 @@ public class ToggleOnOff : MonoBehaviour {
 
 		//records the fpCharacter's original position 
 		//so that we can have the character start specifically where we desire
-		originalPosition = /*new Vector3 ((float)-14.6, (float) 9.0, (float) 741.3);*/fPcharacter.transform.position;
-
 		//move fpCharacter temporarily away from the current screen
 		//fPcharacter.transform.position = new Vector3 (0, -15.0f, 0);
 
@@ -62,10 +60,10 @@ public class ToggleOnOff : MonoBehaviour {
 
 		//fpCharacter to the following position
 		Debug.Log("Create character");
-		Instantiate(fPcharacter, originalPosition, Quaternion.Euler(0,0,0));
+		Instantiate(fPcharacter, gameObject.transform.position, Quaternion.Euler(0,180,0));
 
 		//allows fpCharacter to move to this position
-		fPcharacter.transform.position = originalPosition;
+		//fPcharacter.transform.position = originalPosition;
 	}
 	public void CountdownStart()
 	{
