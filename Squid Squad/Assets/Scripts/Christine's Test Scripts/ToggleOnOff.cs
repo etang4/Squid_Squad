@@ -32,10 +32,10 @@ public class ToggleOnOff : MonoBehaviour {
 
 		//records the fpCharacter's original position 
 		//so that we can have the character start specifically where we desire
-		originalPosition = fPcharacter.transform.position;
+		originalPosition = /*new Vector3 ((float)-14.6, (float) 9.0, (float) 741.3);*/fPcharacter.transform.position;
 
 		//move fpCharacter temporarily away from the current screen
-		fPcharacter.transform.position = new Vector3 (0, -15.0f, 0);
+		//fPcharacter.transform.position = new Vector3 (0, -15.0f, 0);
 
 		//freeze player's position
 		//fPcharacter.rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
@@ -62,7 +62,10 @@ public class ToggleOnOff : MonoBehaviour {
 
 		//fpCharacter to the following position
 		Debug.Log("Create character");
-		Instantiate(fPcharacter,this.gameObject.transform.position, Quaternion.Euler(0,180,0));
+		//Instantiate(fPcharacter, originalPosition, Quaternion.Euler(0,0,0));
+
+		//allows fpCharacter to move to this position
+		fPcharacter.transform.position = originalPosition;
 	}
 	public void CountdownStart()
 	{

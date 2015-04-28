@@ -7,6 +7,20 @@ TagManager:
   - YellowPlayer
   - Obstacle
   - 
+  - Boost
+  - RedPlayer
+  - RaceTrack
+  - NodeList
+  - RaceTrackNode
+  - GUITEXT2
+  - BluePlayer
+  - LapTrigger
+  - GUITEXT1
+  - GUITEXT
+  - OilSlide
+  - RedPlauer
+  - BirdEye
+  - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
   Builtin Layer 2: Ignore Raycast

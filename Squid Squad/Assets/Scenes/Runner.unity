@@ -6845,7 +6845,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 582801229}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -98529514, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
@@ -14541,7 +14541,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1180735541
 Transform:
   m_ObjectHideFlags: 0
@@ -14549,7 +14549,7 @@ Transform:
   m_PrefabInternal: {fileID: 1758077250}
   m_GameObject: {fileID: 1180735540}
   m_LocalRotation: {x: 0, y: -.0577602796, z: 0, w: .998330474}
-  m_LocalPosition: {x: -23.9099998, y: .900000095, z: 3.99998522}
+  m_LocalPosition: {x: -23.9099998, y: 1.36000001, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 279476332}
@@ -14561,7 +14561,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1180735540}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a68bddf168647174da319244b3eeadb0, type: 3}
   m_Name: 
@@ -15278,11 +15278,10 @@ GameObject:
   - 114: {fileID: 1212754918}
   - 114: {fileID: 1212754917}
   - 114: {fileID: 1212754916}
-  - 54: {fileID: 1212754921}
   - 64: {fileID: 1212754922}
   m_Layer: 0
-  m_Name: First Person Controller
-  m_TagString: Untagged
+  m_Name: FPEric
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15328,13 +15327,13 @@ MonoBehaviour:
 --- !u!114 &1212754917
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: 9d4133d5d30b644bd87802a347eaccbe,
+  m_PrefabParentObject: {fileID: 11427984, guid: 9d4133d5d30b644bd87802a347eaccbe,
     type: 2}
   m_PrefabInternal: {fileID: 1758077250}
   m_GameObject: {fileID: 1212754914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60bca8f58a0b8478e946e6e86658cb29, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c9070b5eded7824f908986af49d4b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1212754918
@@ -15352,9 +15351,9 @@ MonoBehaviour:
   canControl: 1
   useFixedUpdate: 1
   movement:
-    maxForwardSpeed: 6
-    maxSidewaysSpeed: 6
-    maxBackwardsSpeed: 6
+    maxForwardSpeed: 30
+    maxSidewaysSpeed: 30
+    maxBackwardsSpeed: 0
     slopeSpeedMultiplier:
       serializedVersion: 2
       m_Curve:
@@ -15375,13 +15374,13 @@ MonoBehaviour:
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-    maxGroundAcceleration: 20
+    maxGroundAcceleration: 60
     maxAirAcceleration: 15
     gravity: 20
-    maxFallSpeed: 20
+    maxFallSpeed: 40
   jumping:
     enabled: 1
-    baseHeight: 1
+    baseHeight: 5
     extraHeight: 1
     perpAmount: 0
     steepPerpAmount: .5
@@ -15389,7 +15388,7 @@ MonoBehaviour:
     enabled: 1
     movementTransfer: 2
   sliding:
-    enabled: 1
+    enabled: 0
     slidingSpeed: 10
     sidewaysControl: 1
     speedControl: .400000006
@@ -15427,21 +15426,6 @@ CharacterController:
   m_SkinWidth: .0500000007
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &1212754921
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1212754914}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!64 &1212754922
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20807,7 +20791,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1612664396}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -98529514, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
@@ -22547,11 +22531,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 3.99998522
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .900000095
+      value: 1.36000001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalRotation.z
