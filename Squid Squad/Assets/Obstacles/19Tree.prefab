@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &152786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 452786}
+  - 33: {fileID: 3352786}
+  - 23: {fileID: 2352786}
+  - 64: {fileID: 6452786}
+  - 114: {fileID: 11452786}
+  - 64: {fileID: 6481762}
+  m_Layer: 0
+  m_Name: 19Tree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &452786
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152786}
+  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+  m_LocalPosition: {x: 991.928955, y: 0, z: 975.28009}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!23 &2352786
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152786}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: f494330957bb0d148a0a67c645b81039, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3352786
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152786}
+  m_Mesh: {fileID: 4300000, guid: 0ffef31d1feba6349af84b64150af0c7, type: 3}
+--- !u!64 &6452786
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152786}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 0ffef31d1feba6349af84b64150af0c7, type: 3}
+--- !u!64 &6481762
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152786}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 0ffef31d1feba6349af84b64150af0c7, type: 3}
+--- !u!114 &11452786
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b51ed7eb53c5344ab08661fd21456e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Replace: 1
+  meshFileName: Tree_BlossomB-Colored
+  newPrefabName: Tree_BlossomB
+  tempColors:
+  - {r: .469999999, g: .43900001, b: .372000009, a: 1}
+  - {r: .308999985, g: .243000001, b: .175999999, a: 1}
+  - {r: .43900001, g: .372000009, b: .300999999, a: 1}
+  - {r: .238999993, g: .238999993, b: .238999993, a: 1}
+  - {r: .384000003, g: .384000003, b: .384000003, a: 1}
+  - {r: .243000001, g: .200000003, b: .136999995, a: 1}
+  globalAlpha: 1
+  Contrast: .5
+  Shadows: 1
+  MidTones: 1
+  Highlights: 0
+  ContrastClamp1: 0
+  ContrastClamp2: 1
+  preserveShading: 1
+  originalVCs: []
+  originalVC_HSVs: []
+  originalValues: []
+  newValues: []
+  newShading: []
+  isPWMesh: 0
+  hasCollider: 0
+  isSaving: 0
+  pwMeshOverride: 0
+  updateMeshCollider: 1
+  isSM: 0
+  isMesh: 0
+  mesh: {fileID: 0}
+  tempMesh: {fileID: 0}
+  sourceMF: {fileID: 0}
+  sourceSMR: {fileID: 0}
+  isPrefab: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 152786}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

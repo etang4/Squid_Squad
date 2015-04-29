@@ -58,9 +58,9 @@ Material:
         second: {r: .650980413, g: .78039217, b: .996078432, a: 1}
       data:
         first:
-          name: _DiffuseCol
+          name: _DiffuseTint
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _DiffuseTint
+          name: _DiffuseCol
         second: {r: 1, g: 1, b: 1, a: 1}

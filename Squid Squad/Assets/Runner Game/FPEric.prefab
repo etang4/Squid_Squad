@@ -251,14 +251,14 @@ MonoBehaviour:
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 90
-        value: 0
+      - time: 99.7062531
+        value: .999374926
         inSlope: 0
         outSlope: 0
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-    maxGroundAcceleration: 60.3300018
+    maxGroundAcceleration: 30
     maxAirAcceleration: 15
     gravity: 20
     maxFallSpeed: 40
