@@ -3,6 +3,8 @@ using System.Collections;
 
 public class CamMovement : MonoBehaviour {
 
+
+
 	public float CamSpeed = 20f;
 	public bool Invert = false;
 	// Use this for initialization
