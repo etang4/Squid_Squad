@@ -12,7 +12,7 @@ public class ToggleOnOffERIC : MonoBehaviour {
 	public GameObject fPcharacter;
 
 
-	public GameObject countdown1, countdown2, countdown3, startbutton;
+	public GameObject startbutton;//countdown1, countdown2, countdown3, 
 	float currentTimer;
 
 	// Use this for initialization
@@ -25,9 +25,9 @@ public class ToggleOnOffERIC : MonoBehaviour {
 
 		scoreBoardGUI.SetActive (false);
 
-		countdown1.SetActive (false);
-		countdown2.SetActive (false);
-		countdown3.SetActive (false);
+		//countdown1.SetActive (false);
+		//countdown2.SetActive (false);
+		//countdown3.SetActive (false);
 		//startbutton.SetActive (false);
 
 		//records the fpCharacter's original position 
@@ -68,7 +68,7 @@ public class ToggleOnOffERIC : MonoBehaviour {
 	public void CountdownStart()
 	{
 		itemsPanel.SetActive(false);
-		countdown3.SetActive (true);
+		//countdown3.SetActive (true);
 		startbutton.SetActive (true);
 
 		visibleButton.SetActive (false);
@@ -86,19 +86,19 @@ public class ToggleOnOffERIC : MonoBehaviour {
 
 		//when one second passes
 		if (timeGoing%60 > currentTimer + 1) {
-				countdown3.SetActive (false);
-				countdown2.SetActive (true);
-				countdown1.SetActive (false);
+				//countdown3.SetActive (false);
+				//countdown2.SetActive (true);
+				//countdown1.SetActive (false);
 
 			if (timeGoing%60 > currentTimer + 2) {
-						countdown3.SetActive (false);
-						countdown2.SetActive (false);
-						countdown1.SetActive (true);
+						//countdown3.SetActive (false);
+						//countdown2.SetActive (false);
+						//countdown1.SetActive (true);
 				}
 			if (timeGoing%60 > currentTimer + 3) {
-						countdown3.SetActive (false);
-						countdown2.SetActive (false);
-						countdown1.SetActive (false);
+					//	countdown3.SetActive (false);
+						//countdown2.SetActive (false);
+					//	countdown1.SetActive (false);
 
 						OffTogglePushed (); //enters a new state
 				}

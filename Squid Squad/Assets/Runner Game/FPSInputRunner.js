@@ -21,7 +21,7 @@ function Update () {
 	if(rdist < 5){
 		HorAxis = Mathf.Max(0, HorAxis);
 	}
-	Debug.Log(HorAxis);
+	Debug.Log(ldist);
 	var directionVector = new Vector3(HorAxis * 30, 0, 30);
 	
 	if (directionVector != Vector3.zero) {
@@ -42,10 +42,11 @@ function Update () {
 	}
 	
 	// Apply the direction to the CharacterMotor
-	motor.inputMoveDirection = transform.rotation * directionVector;
+	motor.inputMoveDirection = transform.rotation * directionVector * 1000;
 	motor.inputJump = Input.GetButton("Jump");
 
 	var speed : float = gameObject.GetComponent.<CharacterController>().velocity.magnitude;
+
 	if (speed < 0.5 ){
 		GameObject.Find("SpawnPoint").GetComponent("ToggleOnOffERIC").OnTogglePushed();
 		Destroy(gameObject);

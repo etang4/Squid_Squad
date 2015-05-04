@@ -4,14 +4,14 @@ using System.Collections;
 public class FinishLine : MonoBehaviour {
 
 	public GameObject scoreBoardGUI;
-	public GameTimer runningTimeScore; //get the timescore
+	//public GameObject runningTimeScore; //get the timescore
 	public int seconds = 0, minutes = 0;
 	public UnityEngine.UI.Text str;
 	float s = 0f;
 
 	// Use this for initialization
 	void Start () {
-		runningTimeScore.Start ();
+		//runningTimeScore.Start ();
 	}
 	
 	// Update is called once per frame
@@ -30,7 +30,7 @@ public class FinishLine : MonoBehaviour {
 			//seconds = runningTimeScore.seconds;
 			//minutes = runningTimeScore.minutes;
 
-			str.text = minutes + " " + seconds;
+			//str.text = "You Win!";
 			
 		}
 	}

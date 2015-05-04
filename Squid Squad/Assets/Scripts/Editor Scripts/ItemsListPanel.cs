@@ -11,7 +11,7 @@ public class ItemsListPanel : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		for(int i = 0; i < listSize - 1; i++){
+		for(int i = 0; i < listSize; i++){
 			GameObject newButton = Instantiate(itemsList[i]) as GameObject;
 			newButton.transform.parent = this.transform;
 			//set new panels to correct size
@@ -63,4 +63,23 @@ public class ItemsListPanel : MonoBehaviour {
 		GameObject item8 = (GameObject) Instantiate(items[8]);
 	}
 
+	public void itemNine(){
+		GameObject item8 = (GameObject) Instantiate(items[9]);
+	}
+
+	public void itemTen(){
+		GameObject item8 = (GameObject) Instantiate(items[10]);
+	}
+
+	public void itemEleven(){
+		GameObject item8 = (GameObject) Instantiate(items[11]);
+	}
+
+	public void itemTwelve(){
+		GameObject item8 = (GameObject) Instantiate(items[12]);
+	}
+
+	public void itemThirteen(){
+		GameObject item8 = (GameObject) Instantiate(items[13]);
+	}
 }

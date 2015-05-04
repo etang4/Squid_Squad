@@ -5,7 +5,7 @@ public class CamMovement : MonoBehaviour {
 
 
 
-	public float CamSpeed = 20f;
+	public float CamSpeed = 150f;
 	public bool Invert = false;
 	// Use this for initialization
 	void Start () {

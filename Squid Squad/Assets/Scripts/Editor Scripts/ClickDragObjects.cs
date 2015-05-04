@@ -25,7 +25,7 @@ public class ClickDragObjects : MonoBehaviour {
 			screenPoint = Camera.main.camera.ScreenPointToRay(Input.mousePosition);
 			if(Physics.Raycast(screenPoint, out hit, Mathf.Infinity)){
 				if(hit.collider.gameObject == character){
-					Destroy(gameObject);
+					Destroy(character);
 				}
 			}
  		}
@@ -71,8 +71,11 @@ public class ClickDragObjects : MonoBehaviour {
  		if(Input.GetKeyUp("r")){
  			transform.Rotate(0,90,0);
  		}
+ 		if(Input.GetKeyUp("e")){
+ 			transform.Rotate(90,0,0);
+ 		}
  		if(Input.GetKeyUp("w")){
- 			transform.Rotate(0,-90,0);
+ 			transform.Rotate(0,0,90);
  		}
  	}
 }

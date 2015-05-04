@@ -5,7 +5,7 @@ public class ItemTab : MonoBehaviour {
 
 	public GameObject itemTab;
 	public GameObject gameplayTab;
-	public GameObject chooseFPTab; //this tab will allow users to select a cart to control
+	//public GameObject chooseFPTab; //this tab will allow users to select a cart to control
 	
 	// Use this for initialization
 	void Start () {
@@ -20,12 +20,12 @@ public class ItemTab : MonoBehaviour {
 	public void ClickedItemTab(){
 		itemTab.SetActive(true);
 		gameplayTab.SetActive(false);
-		chooseFPTab.SetActive(false);
+		//chooseFPTab.SetActive(false);
 	}
 	
 	public void ClickedGameplayTab(){
 		itemTab.SetActive(false);
 		gameplayTab.SetActive(true);
-		chooseFPTab.SetActive(false);
+		//chooseFPTab.SetActive(false);
 	}
 }
