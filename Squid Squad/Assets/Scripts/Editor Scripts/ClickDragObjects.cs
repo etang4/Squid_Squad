@@ -9,17 +9,24 @@ public class ClickDragObjects : MonoBehaviour {
  	public LayerMask terrainMask;
  	private float moveSpeed;
  	float snapUnit;
-
+ 	public bool placedInLevel;
  	private bool justCreated;
+
 
  	void Start(){
  		snapUnit = 5f;
  		moveSpeed = 40f;
- 		justCreated = true;
+ 		if(placedInLevel == true){
+ 			justCreated = false;
+ 		}
+ 		else{
+ 			justCreated = true;
+ 		}
  	}
 
  	//object auto follows the cursor
 	void Update(){
+		
 		//Delete Object
 		if(Input.GetMouseButtonDown(1)){
 			screenPoint = Camera.main.camera.ScreenPointToRay(Input.mousePosition);

@@ -8,6 +8,7 @@ function Awake () {
 // Update is called once per frame
 function Update () {
 	// Get the input vector from keyboard or analog stick
+	/*
 	var HorAxis = Input.GetAxis("Horizontal");
 	var lWall = GameObject.Find("LeftWall");
 	var rWall = GameObject.Find("RightWall");
@@ -22,7 +23,8 @@ function Update () {
 		HorAxis = Mathf.Max(0, HorAxis);
 	}
 	Debug.Log(ldist);
-	var directionVector = new Vector3(HorAxis * 30, 0, 30);
+	*/
+	var directionVector = new Vector3(0, 0, 30);
 	
 	if (directionVector != Vector3.zero) {
 		// Get the length of the directon vector and then normalize it
@@ -43,11 +45,13 @@ function Update () {
 	
 	// Apply the direction to the CharacterMotor
 	motor.inputMoveDirection = transform.rotation * directionVector * 1000;
+
 	motor.inputJump = Input.GetButton("Jump");
+	//motor.inputJump = Input.GetKeyDown(KeyCode.UpArrow);
 
 	var speed : float = gameObject.GetComponent.<CharacterController>().velocity.magnitude;
 
-	if (speed < 0.5 ){
+	if (speed < 0.5){
 		GameObject.Find("SpawnPoint").GetComponent("ToggleOnOffERIC").OnTogglePushed();
 		Destroy(gameObject);
 	}
